@@ -1,0 +1,240 @@
+    PID %CPU %MEM COMMAND
+      1  0.0  0.2 /sbin/init splash
+      2  0.0  0.0 [kthreadd]
+      3  0.0  0.0 [rcu_gp]
+      4  0.0  0.0 [rcu_par_gp]
+      5  0.0  0.0 [slub_flushwq]
+      6  0.0  0.0 [netns]
+      8  0.0  0.0 [kworker/0:0H-events_highpri]
+     10  0.0  0.0 [mm_percpu_wq]
+     11  0.0  0.0 [rcu_tasks_kthread]
+     12  0.0  0.0 [rcu_tasks_rude_kthread]
+     13  0.0  0.0 [rcu_tasks_trace_kthread]
+     14  0.0  0.0 [ksoftirqd/0]
+     15  0.0  0.0 [rcu_preempt]
+     16  0.0  0.0 [migration/0]
+     17  0.0  0.0 [idle_inject/0]
+     19  0.0  0.0 [cpuhp/0]
+     20  0.0  0.0 [cpuhp/1]
+     21  0.0  0.0 [idle_inject/1]
+     22  0.0  0.0 [migration/1]
+     23  0.0  0.0 [ksoftirqd/1]
+     25  0.0  0.0 [kworker/1:0H-events_highpri]
+     26  0.0  0.0 [cpuhp/2]
+     27  0.0  0.0 [idle_inject/2]
+     28  0.0  0.0 [migration/2]
+     29  0.0  0.0 [ksoftirqd/2]
+     31  0.0  0.0 [kworker/2:0H-events_highpri]
+     32  0.0  0.0 [cpuhp/3]
+     33  0.0  0.0 [idle_inject/3]
+     34  0.0  0.0 [migration/3]
+     35  0.0  0.0 [ksoftirqd/3]
+     37  0.0  0.0 [kworker/3:0H-events_highpri]
+     38  0.0  0.0 [kdevtmpfs]
+     39  0.0  0.0 [inet_frag_wq]
+     40  0.0  0.0 [kauditd]
+     41  0.0  0.0 [khungtaskd]
+     43  0.0  0.0 [oom_reaper]
+     45  0.0  0.0 [writeback]
+     46  0.0  0.0 [kcompactd0]
+     47  0.0  0.0 [ksmd]
+     48  0.0  0.0 [khugepaged]
+     49  0.0  0.0 [kintegrityd]
+     50  0.0  0.0 [kblockd]
+     51  0.0  0.0 [blkcg_punt_bio]
+     52  0.0  0.0 [tpm_dev_wq]
+     53  0.0  0.0 [ata_sff]
+     54  0.0  0.0 [md]
+     55  0.0  0.0 [edac-poller]
+     56  0.0  0.0 [devfreq_wq]
+     57  0.0  0.0 [watchdogd]
+     59  0.0  0.0 [kworker/0:1H-kblockd]
+     60  0.0  0.0 [kswapd0]
+     61  0.0  0.0 [ecryptfs-kthread]
+     67  0.0  0.0 [kthrotld]
+     72  0.0  0.0 [acpi_thermal_pm]
+     73  0.0  0.0 [xenbus_probe]
+     75  0.0  0.0 [scsi_eh_0]
+     76  0.0  0.0 [scsi_tmf_0]
+     77  0.0  0.0 [scsi_eh_1]
+     78  0.0  0.0 [scsi_tmf_1]
+     80  0.0  0.0 [vfio-irqfd-clea]
+     82  0.0  0.0 [mld]
+     83  0.0  0.0 [kworker/1:1H-kblockd]
+     84  0.0  0.0 [ipv6_addrconf]
+     89  0.0  0.0 [kstrp]
+     96  0.0  0.0 [zswap-shrink]
+     97  0.0  0.0 [kworker/u9:0]
+    143  0.0  0.0 [charger_manager]
+    166  0.0  0.0 [kworker/2:1H-kblockd]
+    192  0.0  0.0 [kworker/3:1H-kblockd]
+    194  0.0  0.0 [scsi_eh_2]
+    196  0.0  0.0 [scsi_tmf_2]
+    221  0.0  0.0 [jbd2/sda3-8]
+    222  0.0  0.0 [ext4-rsv-conver]
+    265  0.0  0.6 /lib/systemd/systemd-journald
+    301  0.0  0.0 [irq/18-vmwgfx]
+    302  0.0  0.0 [card0-crtc0]
+    303  0.0  0.0 [card0-crtc1]
+    304  0.0  0.0 [card0-crtc2]
+    305  0.0  0.0 [card0-crtc3]
+    306  0.0  0.0 [card0-crtc4]
+    307  0.0  0.0 [card0-crtc5]
+    308  0.0  0.0 [card0-crtc6]
+    309  0.0  0.0 [card0-crtc7]
+    330  0.0  0.1 /lib/systemd/systemd-udevd
+    367  0.0  0.0 [cryptd]
+    377  0.0  0.0 [iprt-VBoxWQueue]
+    643  0.0  0.2 /lib/systemd/systemd-resolved
+    652  0.0  0.1 /lib/systemd/systemd-timesyncd
+    686  0.0  0.1 /usr/libexec/accounts-daemon
+    687  0.0  0.0 /usr/sbin/acpid
+    689  0.0  0.0 avahi-daemon: running [K213309.local]
+    690  0.0  0.0 /usr/sbin/cron -f -P
+    691  0.0  0.1 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+    692  0.0  0.3 /usr/sbin/NetworkManager --no-daemon
+    699  0.0  0.0 /usr/sbin/irqbalance --foreground
+    700  0.0  0.4 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+    704  0.0  0.2 /usr/libexec/polkitd --no-debug
+    707  0.0  0.1 /usr/libexec/power-profiles-daemon
+    708  0.0  0.1 /usr/sbin/rsyslogd -n -iNONE
+    717  0.0  0.9 /usr/lib/snapd/snapd
+    718  0.0  0.1 /usr/libexec/switcheroo-control
+    719  0.0  0.1 /lib/systemd/systemd-logind
+    720  0.0  0.2 /usr/libexec/udisks2/udisksd
+    722  0.0  0.1 /sbin/wpa_supplicant -u -s -O /run/wpa_supplicant
+    731  0.0  0.0 avahi-daemon: chroot helper
+    854  0.0  0.2 /usr/sbin/cupsd -l
+    858  0.0  0.4 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+    865  0.0  0.2 /usr/sbin/ModemManager
+    937  0.0  0.2 /usr/sbin/cups-browsed
+    956  0.0  0.0 /usr/sbin/kerneloops --test
+    958  0.0  0.0 /usr/sbin/kerneloops
+   1030  0.0  0.2 /usr/sbin/apache2 -k start
+   1054  0.0  0.1 /usr/sbin/apache2 -k start
+   1055  0.0  0.1 /usr/sbin/apache2 -k start
+   1056  0.0  0.1 /usr/sbin/apache2 -k start
+   1057  0.0  0.1 /usr/sbin/apache2 -k start
+   1058  0.0  0.1 /usr/sbin/apache2 -k start
+   1470  0.0  0.0 /usr/bin/VBoxDRMClient
+   1474  0.0  0.0 /usr/sbin/VBoxService --pidfile /var/run/vboxadd-service.sh
+   1499  0.0  0.1 /usr/sbin/gdm3
+   1677  0.0  0.0 /usr/libexec/rtkit-daemon
+   1967  0.0  0.0 /usr/lib/postfix/sbin/master -w
+   1969  0.0  0.1 qmgr -l -t unix -u
+   2129  0.0  0.1 /usr/libexec/upowerd
+   2291  0.0  0.9 /usr/libexec/packagekitd
+   2545  0.0  0.2 /usr/libexec/colord
+   2767  0.0  0.2 gdm-session-worker [pam/gdm-password]
+   2781  0.0  0.2 /lib/systemd/systemd --user
+   2782  0.0  0.0 (sd-pam)
+   2788  0.0  0.0 /usr/bin/pipewire
+   2789  0.0  0.0 /usr/bin/pipewire-media-session
+   2790  0.0  0.4 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+   2791  0.0  0.1 /snap/snapd-desktop-integration/83/usr/bin/snapd-desktop-integration
+   2804  0.0  0.1 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+   2810  0.0  0.1 /usr/libexec/gvfsd
+   2812  0.0  0.1 /usr/bin/gnome-keyring-daemon --daemonize --login
+   2825  0.0  0.1 /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f
+   2834  0.0  0.1 /usr/libexec/xdg-document-portal
+   2838  0.0  0.1 /usr/libexec/xdg-permission-store
+   2844  0.0  0.0 fusermount3 -o rw,nosuid,nodev,fsname=portal,auto_unmount,subtype=portal -- /run/user/1000/doc
+   2847  0.0  0.1 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+   2850  0.0  0.2 /usr/libexec/gnome-session-binary --session=ubuntu
+   2927  0.0  0.0 /usr/libexec/gnome-session-ctl --monitor
+   2939  0.0  0.3 /usr/libexec/gnome-session-binary --systemd-service --session=ubuntu
+   2956  0.0  0.1 /usr/libexec/at-spi-bus-launcher --launch-immediately
+   2966  0.0  0.0 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --address=unix:path=/run/user/1000/at-spi/bus
+   3013  0.0  0.1 /usr/libexec/gvfs-udisks2-volume-monitor
+   3023  0.0  0.1 /usr/libexec/gvfs-afc-volume-monitor
+   3028  0.0  0.1 /usr/libexec/gvfs-gphoto2-volume-monitor
+   3032  0.0  0.1 /usr/libexec/gvfs-mtp-volume-monitor
+   3036  0.0  0.1 /usr/libexec/gvfs-goa-volume-monitor
+   3040  0.0  0.4 /usr/libexec/goa-daemon
+   3047  0.0  0.2 /usr/libexec/goa-identity-service
+   3055  0.0  0.2 /usr/libexec/gnome-shell-calendar-server
+   3064  0.0  0.4 /usr/libexec/evolution-source-registry
+   3067  0.0  0.1 /usr/libexec/dconf-service
+   3071  0.0  0.3 /snap/snapd-desktop-integration/83/usr/bin/snapd-desktop-integration
+   3080  0.0  0.2 /usr/libexec/xdg-desktop-portal
+   3084  0.0  0.5 /usr/libexec/xdg-desktop-portal-gnome
+   3087  0.0  0.4 /usr/libexec/evolution-calendar-factory
+   3099  0.0  0.1 /usr/libexec/gvfsd-trash --spawner :1.2 /org/gtk/gvfs/exec_spaw/0
+   3110  0.0  0.4 /usr/libexec/evolution-addressbook-factory
+   3125  0.0  0.3 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+   3127  0.0  0.1 /usr/libexec/at-spi2-registryd --use-gnome-session
+   3140  0.0  0.0 sh -c /usr/bin/ibus-daemon --panel disable $([ "$XDG_SESSION_TYPE" = "x11" ] && echo "--xim")
+   3141  0.0  0.1 /usr/libexec/gsd-a11y-settings
+   3145  0.0  0.4 /usr/libexec/gsd-color
+   3147  0.0  0.3 /usr/libexec/gsd-datetime
+   3148  0.0  0.1 /usr/libexec/gsd-housekeeping
+   3155  0.0  0.4 /usr/libexec/gsd-keyboard
+   3160  0.0  0.5 /usr/libexec/gsd-media-keys
+   3165  0.0  0.5 /usr/libexec/gsd-power
+   3170  0.0  0.2 /usr/libexec/gsd-print-notifications
+   3173  0.0  0.1 /usr/libexec/gsd-rfkill
+   3176  0.0  0.1 /usr/libexec/gsd-screensaver-proxy
+   3181  0.0  0.1 /usr/libexec/gsd-sharing
+   3182  0.0  0.1 /usr/libexec/gsd-smartcard
+   3187  0.0  0.1 /usr/libexec/gsd-sound
+   3191  0.0  0.4 /usr/libexec/gsd-wacom
+   3217  0.0  0.1 /usr/libexec/gsd-disk-utility-notify
+   3227  0.0  0.9 /usr/libexec/evolution-data-server/evolution-alarm-notify
+   3240  0.0  0.2 /usr/libexec/gsd-printer
+   3242  0.0  0.1 /usr/libexec/ibus-memconf
+   3244  0.0  0.5 /usr/libexec/ibus-extension-gtk3
+   3255  0.0  0.0 /usr/bin/VBoxClient --clipboard
+   3256  0.0  0.1 /usr/bin/VBoxClient --clipboard
+   3304  0.0  0.1 /usr/libexec/ibus-portal
+   3308  0.0  5.6 /snap/snap-store/959/usr/bin/snap-store --gapplication-service
+   3351  0.0  0.1 /usr/libexec/gvfsd-metadata
+   3384  0.0  0.1 /usr/libexec/ibus-engine-simple
+   3448  0.0  1.4 /usr/libexec/gsd-xsettings
+   3478  0.0  0.3 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.ScreenSaver
+   3534  0.0  0.4 /usr/libexec/xdg-desktop-portal-gtk
+   3572  0.0  0.4 /usr/libexec/ibus-x11
+   3632  0.0  0.0 /usr/bin/VBoxClient --seamless
+   3637  0.0  0.0 /usr/bin/VBoxClient --draganddrop
+   3644  0.0  0.0 /usr/bin/VBoxClient --vmsvga-session
+   3645  0.0  0.0 /usr/bin/VBoxClient --vmsvga-session
+   4379  0.0  0.5 update-notifier
+   6195  0.0  0.3 /usr/bin/snap userd
+   7927  0.0  0.1 /usr/libexec/gvfsd-network --spawner :1.2 /org/gtk/gvfs/exec_spaw/1
+   7945  0.0  0.1 /usr/libexec/gvfsd-dnssd --spawner :1.2 /org/gtk/gvfs/exec_spaw/3
+ 100031  0.0  0.0 [kworker/u8:2-events_unbound]
+ 103962  0.0  0.0 [kworker/0:1-events]
+ 104345  0.0  0.0 [kworker/2:1-cgroup_destroy]
+ 104931  0.0  0.0 [kworker/3:0-cgroup_destroy]
+ 112436  0.0  0.0 [kworker/0:0-inet_frag_wq]
+ 112441  0.0  0.0 [kworker/3:1-events]
+ 113494  0.0  0.0 [kworker/u8:7-ext4-rsv-conversion]
+ 114179  0.0  0.0 [kworker/2:2-events]
+ 114180  0.0  0.0 [kworker/1:1-events]
+ 114181  0.0  0.0 [kworker/1:3-events]
+ 114816  0.0  0.1 pickup -l -t unix -u -c
+ 114836  0.0  0.0 [kworker/3:2]
+ 114837  0.0  0.0 [kworker/3:3-events]
+ 114838  0.0  0.0 [kworker/0:2-events]
+ 114958  0.0  0.1 bash
+ 114967  0.0  0.0 /bin/bash ./CRun.sh FASTNUCESTaskManager
+ 114976  0.0  0.1 sudo ./FASTNUCESTaskManager-bin
+ 114977  0.0  0.0 sudo ./FASTNUCESTaskManager-bin
+ 115018  0.0  0.0 [kworker/u8:0]
+ 115172  0.0  0.0 /bin/sh ProcessInfo.sh --sort=%cpu
+ 115173  0.0  0.0 ps -eo pid,%cpu,%mem,command --sort=%cpu -u mohammadyehya
+   3633  0.1  0.0 /usr/bin/VBoxClient --seamless
+ 113488  0.1  0.0 [kworker/u8:5-flush-8:0]
+ 114934  0.1  0.3 /usr/bin/python3 /usr/bin/gnome-terminal --wait
+    642  0.2  0.1 /lib/systemd/systemd-oomd
+   3143  0.2  0.2 /usr/bin/ibus-daemon --panel disable
+   3614  0.2  6.6 gjs /usr/share/gnome-shell/extensions/ding@rastersoft.com/ding.js -E -P /usr/share/gnome-shell/extensions/ding@rastersoft.com -M 0 -D 0:0:1366:768:1:27:40:0:0:0
+   3638  0.3  0.0 /usr/bin/VBoxClient --draganddrop
+ 114935  0.3  0.5 /usr/bin/gnome-terminal.real --wait
+   2874  0.5  0.6 /usr/libexec/tracker-miner-fs-3
+   3293  0.8  1.2 /usr/bin/Xwayland :0 -rootless -noreset -accessx -core -auth /run/user/1000/.mutter-Xwaylandauth.DKOE51 -listen 4 -listen 5 -displayfd 6 -initfd 7
+ 114982  0.9  0.6 /usr/libexec/tracker-extract-3
+   1082  1.4  7.4 /usr/sbin/mysqld
+ 114940  1.4  1.0 /usr/libexec/gnome-terminal-server
+ 115022  7.0  2.8 glade
+   2958 12.5  9.8 /usr/bin/gnome-shell
+ 114978 17.0  0.8 ./FASTNUCESTaskManager-bin

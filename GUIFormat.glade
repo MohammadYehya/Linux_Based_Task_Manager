@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.38.2 -->
+<interface>
+  <requires lib="gtk+" version="3.24"/>
+  <object class="GtkListStore" id="PriorityStore">
+    <columns>
+      <!-- column-name prio -->
+      <column type="gchararray"/>
+    </columns>
+  </object>
+  <object class="GtkListStore" id="ProcessorData">
+    <columns>
+      <!-- column-name PID -->
+      <column type="gchararray"/>
+      <!-- column-name Name -->
+      <column type="gchararray"/>
+      <!-- column-name CPU% -->
+      <column type="gchararray"/>
+      <!-- column-name MEM% -->
+      <column type="gchararray"/>
+    </columns>
+  </object>
+  <object class="GtkWindow" id="MainWindow">
+    <property name="can-focus">False</property>
+    <child>
+      <object class="GtkFixed" id="Fixed">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <child>
+          <object class="GtkStack" id="stack1">
+            <property name="width-request">1350</property>
+            <property name="height-request">630</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="transition-type">crossfade</property>
+            <child>
+              <object class="GtkFrame" id="Page1">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="label-xalign">0</property>
+                <child>
+                  <object class="GtkAlignment">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="left-padding">12</property>
+                    <child>
+                      <object class="GtkFixed">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <child>
+                          <object class="GtkScrolledWindow">
+                            <property name="width-request">1330</property>
+                            <property name="height-request">565</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">True</property>
+                            <property name="shadow-type">in</property>
+                            <child>
+                              <object class="GtkTreeView" id="tv1">
+                                <property name="visible">True</property>
+                                <property name="can-focus">True</property>
+                                <property name="model">ProcessorData</property>
+                                <property name="search-column">0</property>
+                                <child internal-child="selection">
+                                  <object class="GtkTreeSelection" id="tv1Selection">
+                                    <signal name="changed" handler="on_tv1Selection_changed" swapped="no"/>
+                                  </object>
+                                </child>
+                                <child>
+                                  <object class="GtkTreeViewColumn" id="PID">
+                                    <property name="resizable">True</property>
+                                    <property name="title" translatable="yes">PID</property>
+                                    <property name="clickable">True</property>
+                                    <property name="sort-indicator">True</property>
+                                    <property name="sort-column-id">0</property>
+                                    <child>
+                                      <object class="GtkCellRendererText" id="PID_"/>
+                                    </child>
+                                  </object>
+                                </child>
+                                <child>
+                                  <object class="GtkTreeViewColumn" id="CPU%">
+                                    <property name="resizable">True</property>
+                                    <property name="title" translatable="yes">CPU%</property>
+                                    <property name="clickable">True</property>
+                                    <property name="sort-indicator">True</property>
+                                    <property name="sort-column-id">1</property>
+                                    <child>
+                                      <object class="GtkCellRendererText" id="CPU%_"/>
+                                    </child>
+                                  </object>
+                                </child>
+                                <child>
+                                  <object class="GtkTreeViewColumn" id="MEM%">
+                                    <property name="resizable">True</property>
+                                    <property name="title" translatable="yes">MEM%</property>
+                                    <property name="clickable">True</property>
+                                    <property name="sort-indicator">True</property>
+                                    <property name="sort-column-id">2</property>
+                                    <child>
+                                      <object class="GtkCellRendererText" id="MEM%_"/>
+                                    </child>
+                                  </object>
+                                </child>
+                                <child>
+                                  <object class="GtkTreeViewColumn" id="Name">
+                                    <property name="resizable">True</property>
+                                    <property name="title" translatable="yes">Name</property>
+                                    <property name="clickable">True</property>
+                                    <property name="sort-indicator">True</property>
+                                    <property name="sort-column-id">3</property>
+                                    <child>
+                                      <object class="GtkCellRendererText" id="Name_"/>
+                                    </child>
+                                  </object>
+                                </child>
+                              </object>
+                            </child>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkButton" id="KillButton">
+                            <property name="label" translatable="yes">Kill Process</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">True</property>
+                            <property name="receives-default">True</property>
+                            <signal name="clicked" handler="on_KillButton_clicked" swapped="no"/>
+                          </object>
+                          <packing>
+                            <property name="y">566</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkStack" id="P&amp;AStack">
+                            <property name="width-request">800</property>
+                            <property name="height-request">35</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="transition-type">crossfade</property>
+                            <child>
+                              <object class="GtkFixed">
+                                <property name="visible">True</property>
+                                <property name="can-focus">False</property>
+                                <child>
+                                  <object class="GtkComboBox" id="PriorityPicker">
+                                    <property name="visible">True</property>
+                                    <property name="can-focus">False</property>
+                                    <property name="model">PriorityStore</property>
+                                    <property name="has-entry">True</property>
+                                    <property name="entry-text-column">0</property>
+                                    <signal name="changed" handler="on_PriorityPicker_changed" object="PriorityEntry" swapped="no"/>
+                                    <child internal-child="entry">
+                                      <object class="GtkEntry" id="PriorityEntry">
+                                        <property name="can-focus">True</property>
+                                        <property name="primary-icon-stock">gtk-properties</property>
+                                        <property name="placeholder-text" translatable="yes">Select Priority Level</property>
+                                      </object>
+                                    </child>
+                                  </object>
+                                  <packing>
+                                    <property name="x">50</property>
+                                  </packing>
+                                </child>
+                                <child>
+                                  <object class="GtkButton" id="PriorityButton">
+                                    <property name="label" translatable="yes">Set Priority</property>
+                                    <property name="width-request">100</property>
+                                    <property name="visible">True</property>
+                                    <property name="can-focus">True</property>
+                                    <property name="receives-default">True</property>
+                                    <signal name="clicked" handler="on_PriorityButton_clicked" swapped="no"/>
+                                  </object>
+                                  <packing>
+                                    <property name="x">255</property>
+                                  </packing>
+                                </child>
+                              </object>
+                              <packing>
+                                <property name="name">page0</property>
+                                <property name="title" translatable="yes">Priority</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <object class="GtkFixed">
+                                <property name="visible">True</property>
+                                <property name="can-focus">False</property>
+                                <child>
+                                  <object class="GtkButton" id="AffinityButton">
+                                    <property name="label" translatable="yes">Set Affinity</property>
+                                    <property name="width-request">100</property>
+                                    <property name="visible">True</property>
+                                    <property name="can-focus">True</property>
+                                    <property name="receives-default">True</property>
+                                    <signal name="clicked" handler="on_AffinityButton_clicked" swapped="no"/>
+                                  </object>
+                                  <packing>
+                                    <property name="x">50</property>
+                                  </packing>
+                                </child>
+                                <child>
+                                  <object class="GtkCheckButton" id="cpu0">
+                                    <property name="label" translatable="yes">checkbutton</property>
+                                    <property name="name">cpu0</property>
+                                    <property name="visible">True</property>
+                                    <property name="can-focus">True</property>
+                                    <property name="receives-default">False</property>
+                                    <property name="draw-indicator">True</property>
+                                    <signal name="toggled" handler="on_cpu_toggled" swapped="no"/>
+                                  </object>
+                                  <packing>
+                                    <property name="x">161</property>
+                                    <property name="y">5</property>
+                                  </packing>
+                                </child>
+                                <child>
+                                  <object class="GtkCheckButton" id="cpu1">
+                                    <property name="label" translatable="yes">checkbutton</property>
+                                    <property name="name">cpu1</property>
+                                    <property name="visible">True</property>
+                                    <property name="can-focus">True</property>
+                                    <property name="receives-default">False</property>
+                                    <property name="draw-indicator">True</property>
+                                    <signal name="toggled" handler="on_cpu_toggled" swapped="no"/>
+                                  </object>
+                                  <packing>
+                                    <property name="x">280</property>
+                                    <property name="y">5</property>
+                                  </packing>
+                                </child>
+                                <child>
+                                  <object class="GtkCheckButton" id="cpu2">
+                                    <property name="label" translatable="yes">checkbutton</property>
+                                    <property name="name">cpu2</property>
+                                    <property name="visible">True</property>
+                                    <property name="can-focus">True</property>
+                                    <property name="receives-default">False</property>
+                                    <property name="draw-indicator">True</property>
+                                    <signal name="toggled" handler="on_cpu_toggled" swapped="no"/>
+                                  </object>
+                                  <packing>
+                                    <property name="x">400</property>
+                                    <property name="y">5</property>
+                                  </packing>
+                                </child>
+                                <child>
+                                  <object class="GtkCheckButton" id="cpu3">
+                                    <property name="label" translatable="yes">checkbutton</property>
+                                    <property name="name">cpu3</property>
+                                    <property name="visible">True</property>
+                                    <property name="can-focus">True</property>
+                                    <property name="receives-default">False</property>
+                                    <property name="draw-indicator">True</property>
+                                    <signal name="toggled" handler="on_cpu_toggled" swapped="no"/>
+                                  </object>
+                                  <packing>
+                                    <property name="x">520</property>
+                                    <property name="y">5</property>
+                                  </packing>
+                                </child>
+                              </object>
+                              <packing>
+                                <property name="name">page1</property>
+                                <property name="title" translatable="yes">Affinity</property>
+                                <property name="position">1</property>
+                              </packing>
+                            </child>
+                          </object>
+                          <packing>
+                            <property name="x">355</property>
+                            <property name="y">566</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkStackSwitcher" id="P&amp;A">
+                            <property name="width-request">220</property>
+                            <property name="height-request">35</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="icon-size">0</property>
+                            <property name="stack">P&amp;AStack</property>
+                          </object>
+                          <packing>
+                            <property name="x">112</property>
+                            <property name="y">566</property>
+                          </packing>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child type="label">
+                  <object class="GtkLabel">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="name">page1</property>
+                <property name="title" translatable="yes">Processes</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkFrame" id="Page2">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="label-xalign">0</property>
+                <child>
+                  <object class="GtkAlignment">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="left-padding">12</property>
+                    <child>
+                      <object class="GtkFixed">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <child>
+                          <object class="GtkFixed">
+                            <property name="width-request">1335</property>
+                            <property name="height-request">305</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <child>
+                              <object class="GtkDrawingArea" id="draw1">
+                                <property name="width-request">940</property>
+                                <property name="height-request">305</property>
+                                <property name="visible">True</property>
+                                <property name="can-focus">False</property>
+                                <signal name="draw" handler="on_draw1_draw" swapped="no"/>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="GtkImage">
+                                <property name="width-request">272</property>
+                                <property name="height-request">305</property>
+                                <property name="visible">True</property>
+                                <property name="can-focus">False</property>
+                                <property name="pixbuf">CPU.png</property>
+                              </object>
+                              <packing>
+                                <property name="x">941</property>
+                              </packing>
+                            </child>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkFixed">
+                            <property name="width-request">1335</property>
+                            <property name="height-request">305</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <child>
+                              <object class="GtkDrawingArea" id="draw2">
+                                <property name="width-request">940</property>
+                                <property name="height-request">305</property>
+                                <property name="visible">True</property>
+                                <property name="can-focus">False</property>
+                                <signal name="draw" handler="on_draw2_draw" swapped="no"/>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="GtkImage">
+                                <property name="width-request">272</property>
+                                <property name="height-request">305</property>
+                                <property name="visible">True</property>
+                                <property name="can-focus">False</property>
+                                <property name="pixbuf">Mem.png</property>
+                              </object>
+                              <packing>
+                                <property name="x">941</property>
+                              </packing>
+                            </child>
+                          </object>
+                          <packing>
+                            <property name="y">305</property>
+                          </packing>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child type="label">
+                  <object class="GtkLabel">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="name">page0</property>
+                <property name="title" translatable="yes">Performance</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="x">8</property>
+            <property name="y">30</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkStackSwitcher" id="Switcher">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="homogeneous">True</property>
+            <property name="icon-size">0</property>
+            <property name="stack">stack1</property>
+          </object>
+          <packing>
+            <property name="x">5</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
